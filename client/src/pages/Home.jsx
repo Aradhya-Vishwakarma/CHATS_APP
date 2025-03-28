@@ -1,16 +1,17 @@
-import React from 'react'
-import App from '../App';
-import AppLayout from '../components/layout/AppLayout';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (
-    <div>
-      Home 
-    </div>
-
-  )
-  
+    <>
+      <Helmet>
+        <title>Home - Chat App</title>
+        <meta name="description" content="Welcome to the Chat App" />
+      </Helmet>
+      <h1>Welcome to Home Page</h1>
+    </>
+  );
 };
 
-export default AppLayout()(Home); 
+export default Home;
 
