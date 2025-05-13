@@ -8,7 +8,10 @@ import React from 'react'
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
-    <App />
+      <div onContextMenu={(e) => e.preventDefault()}>
+      <App />
+      </div>
+    
     <CssBaseline />
     </HelmetProvider>
   </React.StrictMode>,

@@ -6,6 +6,7 @@ import { CameraAlt } from "@mui/icons-material";
 import {useFileHandler, useInputValidation , useStrongPassword} from "6pp"
 import { usernameValidator } from "../utils/validator";
 import { Avatar as MuiAvatar } from "@mui/material";
+import { bgColor } from "../constants/color";
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -26,7 +27,7 @@ const Login = () => {
   return (
     <div
      style={{
-background: "linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5))"
+background: bgColor,
     }}
     >
       
